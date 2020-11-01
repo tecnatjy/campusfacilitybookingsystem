@@ -1,9 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="utf8">
         <title>Campus Facility Booking System</title>
+        <style>
+
+            body{
+                border: 4px solid #0F664D;
+                margin: 2%;
+            }
+
+            h1{
+                margin-top: 50px;
+                font-family: Angelica Caroline;
+                font-size: 30pt;
+                letter-spacing: 10px;                
+                color: #0F664D;
+            }
+
+            h2{
+                margin-bottom: 40px;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 15pt;
+                text-shadow: 1px 2px 3px rgb(0,0,0,0.16) ;
+                letter-spacing: 5px;
+            }
+
+            #form{
+                display: block;
+                border: 1px solid #70707063;
+                border-radius:20px ;
+                /* box-shadow: 1px 1px 2px #707070 ; */
+                width: 380px;
+                padding: 30px;
+                margin: auto;
+                margin-bottom: 20px;
+            }
+
+            .my-button, #tnc, h1,h2{
+                text-align: center;
+            }
+
+            #tnc{
+                font-family: Consolas;
+                font-size: 8pt;
+                font-weight: bold;
+                color: #0088CC;
+                line-height: 15pt;
+                letter-spacing: 0.5pt;
+            }
+            
+            label{
+                color: #0F664D;
+                font-weight: bold;
+            }
+
+            .my-input{
+                margin: 8px 0px 15px 0px;
+                border: 1px solid #70707063;
+                border-radius: 10px;
+                padding-left: 8px;
+                height: 25px;
+                width: 250px;
+                font-family: Consolas;
+            }
+
+            .my-input-row{
+                margin-left: 15%;
+                font-family: Consolas;
+            }
+
+            #signup-btn, #login-btn{
+                font-family: Consolas;
+                font-weight: bold;
+                margin: 5px 10px;                
+            }
+
+            #signup-btn{
+                background-color: #0088CC;
+                border: none;
+                border-radius: 15px;
+                padding: 6px 20px;
+                color: white;
+                box-shadow:1px 1px 3px#707070;
+            }
+
+            #login-btn{
+                color: #0088CC;
+                background-color: transparent;
+                border: none;
+            }
+
+        
+        </style>
     </head>
     <body>
-        
+        <h1>Welcome to CFBS</h1>
+        <h2>CAMPUS FACILITIES BOOKING SYSTEM</h2>
+
+        <div id="form">
+            <form action="" method="">
+                <div class="my-input-row">
+                    <label class="my-label" for="fullname">Full Name</label><br>
+                    <input id="fullname" class="my-input" type="text" name="fullname" required="required">
+                </div>
+
+                <div class="my-input-row">
+                    <label class="my-label" for="studentId">Student ID</label><br>
+                    <input id="studentId" class="my-input" type="text" name="studentId" required="required">
+                </div>
+
+                <div class="my-input-row">
+                    <label class="my-label" for="email">Email Address</label><br>
+                    <input id="email" class="my-input" type="email" name="email" required="required">
+                </div>
+
+                <div class="my-input-row">
+                    <label class="my-label" for="phone">Phone Number</label><br>
+                    <input id="phone" class="my-input" type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required="required">
+                </div>
+
+                <div class="my-input-row">
+                    <label class="my-label" for="password">Password</label><br>
+                    <input id="password" class="my-input" type="password" name="password" minlength="8" required="required">
+                </div>
+
+                <div class="my-input-row">
+                    <label class="my-label" for="confirmpassword">Confirm Password</label><br>
+                    <input id="confirmpassword" class="my-input" type="password" name="confirmpassword" required="required">
+                </div>
+
+                <p id="tnc">By creating an account,<br>you agree to our Terms & Conditions.</p>
+                
+                <div class="my-button">
+                    <input id="signup-btn" class="button" type="submit" value="Sign up"/>
+                    or
+                    <input id="login-btn" class="button" type="button" value="Log in"/>
+                </div>
+                
+            </form>
+        </div>
     </body>
 </html>
